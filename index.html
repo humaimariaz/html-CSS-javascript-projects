@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <div class="circle">
+                    <i class="ri-align-justify"></i> 
+                </div>
+            </nav>
+            <img src="images.jfif" alt="image" id="songimage">
+            <h1>Never Be The Same</h1>
+            <p>Camila Cabello</p>
+
+
+            <audio id="song">
+                <source src="audio/Camila_Cabello_-_Never_Be_the_Same_(Jesusful.com).mp3" type="audio/mp3">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="control">
+                <div><i class="ri-arrow-left-double-fill"></i></div>
+                <div  onclick="playpause()"><i class="ri-play-fill" id="ctrlicon" ></i></div>
+                <div><i class="ri-arrow-right-double-fill"></i></div>
+              
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
